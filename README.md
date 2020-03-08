@@ -2,6 +2,8 @@
 
 Project created for a company coding challenge.
 
+Try it for yourself at https://custom-reddit-viewer.herokuapp.com.
+
 ### Technologies used
 
 * npm
