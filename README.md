@@ -27,7 +27,7 @@ When the app opens, it default to [/r/all](https://reddit.com/r/all). You can ty
 
 There is a table containing the hot posts on the chosen subreddit. You can see the thumbnail in the leftmost column (defaults to `selfpost` if the post is a text post). The second column has the post title. The third column has the subreddit name: this is to support /r/all or /r/popular; it's not so useful for normal subreddits. The last (rightmost) column has two links: the link to the content of the post, and the comments for the post (for selfposts, these would be one in the same).
 
-In terms of how the React app is set up: there is a single component called Subreddit. Within that component, there is a header, text field, and table. When the user submits a subreddit, an api call to Reddit is made to retrieve posts, and that is stored in the state. The table is then re-rendered based on the new state. To show /r/all immediately when the app opens, there is a call to the api in componentDidMount.
+In terms of how the React app is set up: there is a single component called Subreddit. Within that component, there is a header, text field, and table. When the user submits a subreddit, an api call to Reddit is made to retrieve posts, which is stored in state. The table is then re-rendered based on the new state. To show /r/all immediately when the app opens, there is an api call in componentDidMount.
 
 ---
 
