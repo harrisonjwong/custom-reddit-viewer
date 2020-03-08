@@ -31,6 +31,8 @@ In terms of how the React app is set up: there is a single component called Subr
 
 ---
 
+<img src="./food.png">
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 
