@@ -1,5 +1,38 @@
+# custom-reddit-viewer
+
+Project created for a company coding challenge.
+
+### Technologies used
+
+* npm
+* React
+* Material UI
+* Axios
+* Heroku
+* GitHub
+
+### How to run locally
+
+Open this directory in a command line and run `npm install`.
+
+Once that is finished, type `npm start` and open [http://localhost:3000](http://localhost:3000) to view it in the browser. 
+
+### Overview 
+
+This is a React app that shows the hot posts on a given subreddit.
+
+When the app opens, it default to [/r/all](https://reddit.com/r/all). You can type in a new subreddit in the text field at the top of the page and press enter to go to that subreddit. If that subreddit does not exist, the app ignores your request and alerts you that the subreddit does not exist.
+
+There is a table containing the hot posts on the chosen subreddit. You can see the thumbnail in the leftmost column (defaults to `selfpost` if the post is a text post). The second column has the post title. The third column has the subreddit name: this is to support /r/all or /r/popular; it's not so useful for normal subreddits. The last (rightmost) column has two links: the link to the content of the post, and the comments for the post (for selfposts, these would be one in the same).
+
+In terms of how the React app is set up: there is a single component called Subreddit. Within that component, there is a header, text field, and table. When the user submits a subreddit, an api call to Reddit is made to retrieve posts, and that is stored in the state. The table is then re-rendered based on the new state. To show /r/all immediately when the app opens, there is a call to the api in componentDidMount.
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+<!-- 
 ## Available Scripts
 
 In the project directory, you can run:
@@ -66,3 +99,4 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+!-->

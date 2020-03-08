@@ -27,7 +27,6 @@ export default class Subreddit extends React.Component {
         `https://www.reddit.com/r/${subName}/.json?limit=25`
       );
       const topPosts = result.data.data.children;
-      console.log(topPosts);
       const cleanedPosts = topPosts.map(post => ({
         id: post.data.id,
         thumbnail: post.data.thumbnail,
@@ -38,7 +37,7 @@ export default class Subreddit extends React.Component {
       }));
       this.setState({ posts: cleanedPosts });
     } catch (err) {
-      console.log(err);
+      alert("subreddit does not exist; please try again with a valid subreddit");
     }
   }
 
@@ -50,12 +49,12 @@ export default class Subreddit extends React.Component {
     };
 
     return (
-      <div className="pp">
+      <div className="reddit">
         <header className="header">
           <h1>
             Custom Reddit Viewer
           </h1>
-          <form className="xyz" onSubmit={onSubmitSubredditField}>
+          <form className="form" onSubmit={onSubmitSubredditField}>
             <TextField
               id="subName"
               className="textfield"
