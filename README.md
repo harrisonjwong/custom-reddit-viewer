@@ -6,8 +6,11 @@ Try it for yourself at https://custom-reddit-viewer.herokuapp.com.
 
 ### Technologies used
 
+Primary framework: React
+
+Others:
+
 * npm
-* React
 * Material UI
 * Axios
 * Heroku
