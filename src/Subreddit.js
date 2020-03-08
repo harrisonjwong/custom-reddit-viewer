@@ -18,7 +18,7 @@ export default class Subreddit extends React.Component {
     };
   }
   componentDidMount() {
-    this.callRedditApi("all");
+    this.callRedditApi("leagueoflegends");
   }
 
   async callRedditApi(subName) {
