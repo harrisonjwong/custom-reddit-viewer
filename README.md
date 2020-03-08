@@ -12,6 +12,7 @@ Others:
 
 * npm
 * Material UI
+* Prettier
 * Axios
 * Heroku
 * GitHub

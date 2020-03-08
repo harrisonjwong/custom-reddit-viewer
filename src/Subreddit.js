@@ -37,7 +37,9 @@ export default class Subreddit extends React.Component {
       }));
       this.setState({ posts: cleanedPosts });
     } catch (err) {
-      alert("subreddit does not exist; please try again with a valid subreddit");
+      alert(
+        "subreddit does not exist; please try again with a valid subreddit"
+      );
     }
   }
 
@@ -51,9 +53,7 @@ export default class Subreddit extends React.Component {
     return (
       <div className="reddit">
         <header className="header">
-          <h1>
-            Custom Reddit Viewer
-          </h1>
+          <h1>Custom Reddit Viewer</h1>
           <form className="form" onSubmit={onSubmitSubredditField}>
             <TextField
               id="subName"
@@ -68,8 +68,8 @@ export default class Subreddit extends React.Component {
             <Table className="table">
               <TableHead>
                 <TableRow>
-                  <TableCell width="150px" >Thumbnail</TableCell>
-                  <TableCell >Post Title</TableCell>
+                  <TableCell width="150px">Thumbnail</TableCell>
+                  <TableCell>Post Title</TableCell>
                   <TableCell width="100px">Subreddit</TableCell>
                   <TableCell width="75px">Links</TableCell>
                 </TableRow>
