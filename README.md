@@ -27,9 +27,9 @@ Once that is finished, type `npm start` and open [http://localhost:3000](http://
 
 This is a React app that shows the hot posts on a given subreddit.
 
-When the app opens, it default to [/r/all](https://reddit.com/r/all). You can type in a new subreddit in the text field at the top of the page and press enter to go to that subreddit. If that subreddit does not exist, the app ignores your request and alerts you that the subreddit does not exist.
+When the app opens, it defaults to [/r/all](https://reddit.com/r/all). You can type in a new subreddit in the text field at the top of the page and press enter to go to that subreddit. If that subreddit does not exist, the app ignores your request and alerts you that the subreddit does not exist.
 
-There is a table containing the hot posts on the chosen subreddit. You can see the thumbnail in the leftmost column (defaults to `selfpost` if the post is a text post). The second column has the post title. The third column has the subreddit name: this is to support /r/all or /r/popular; it's not so useful for normal subreddits. The last (rightmost) column has two links: the link to the content of the post, and the comments for the post (for selfposts, these would be one in the same).
+There is a table containing the hot posts on the chosen subreddit. You can see the thumbnail in the leftmost column (defaults to `selfpost` if the post is a text post). The second column has the post title. The third column has the subreddit name: this is to support /r/all or /r/popular; it's not so useful for normal subreddits. The last (rightmost) column has two links: the link to the content of the post, and the comments for the post (for selfposts, these would the same).
 
 In terms of how the React app is set up: there is a single component called Subreddit. Within that component, there is a header, text field, and table. When the user submits a subreddit, an api call to Reddit is made to retrieve posts, which is stored in state. The table is then re-rendered based on the new state. To show /r/all immediately when the app opens, there is an api call in componentDidMount.
 
